@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(-30deg, #D4FFEB, #FBE0FF, #CDF6FF);
+}
+
+.app {
+    width: 452px;
+    height: 902px;
+    position: relative;
+    z-index: 0;
+    padding: 22px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.app::before {
+    content: "";
+    width: 452px;
+    height: 902px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -226px;
+    margin-top: -450px;
+    background-image: url(../assets/smartphone.webp);
+    z-index: 100;
+    display: none;
+}
+
+.container {
+    background-color: #ececec;
+    width: 100%;
+    height: 734px;
+    position: relative;
+    overflow: auto;
+}
+
+header {
+    width: 100%;
+}
+
+.topSO {
+    width: 100%;
+    height: 32px;
+    background-color: #212121;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fafafa;
+    padding: 0 28px;
+}
+
+.topSO h5 {
+    display: inline-block;
+    width: fit-content;
+    line-height: 0.83em;
+}
+
+.topSO .left,
+.topSO .right {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.topApp {
+    width: 100%;
+    height: 48px;
+    background-color: #242424;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+}
+
+.notify {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 16px;
+    color: #fafafa;
+}
+
+footer {
+    width: 400px;
+    position: absolute;
+    bottom: 22px;
+    z-index: 0;
+    color: #fafafa;
+}
+
+.baseApp {
+    width: 100%;
+    height: 44px;
+    background-color: #242424;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.baseApp .profile {
+    width: 26px;
+    height: 26px;
+    background-color: red;
+    border-radius: 50%;
+    display: block;
+}
+
+.baseSO {
+    width: 100%;
+    height: 48px;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 92px;
+}
+
+.baseSO .fa-bars {
+    transform: rotate(90deg);
+}
+
+main {
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+
+.stories {
+    width: 100%;
+    /* height: 120px; */
+    background-color: #242424;
+    overflow: auto;
+    padding: 10px 0 0px 16px;
+}
+
+.stories-content {
+    width: fit-content;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.story {
+    width: 88px;
+    height: 88px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.story::before {
+    content: "";
+    position: absolute;
+    width: 72px;
+    height: 72px;
+
+    border-radius: 50%;
+    /*1*/
+    border: 8px solid transparent;
+    /*2*/
+    background: linear-gradient(45deg, gold, magenta) border-box;
+    /*3*/
+    -webkit-mask:
+        /*4*/
+        linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    /*5'*/
+    mask-composite: exclude;
+    outline-style: solid;
+    outline-color: #242424;
+    outline-width: 10px;
+    outline-offset: -14px;
+    overflow: hidden;
+}
+
+.feed {
+    width: 100%;
+}
+
+.post {
+    width: 100%;
+    background-color: #242424;
+    color: #fafafa;
+}
+
+.post .post-top {
+    width: 100%;
+    height: 60px;
+    background-color: #242424;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 0 8px;
+    color: #fafafa;
+}
+
+.post .post-top .username {
+    flex-grow: 4;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.post .thumb-user-post {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: black;
+    overflow: hidden;
+}
+
+.post .thumb-user-post img {
+    width: 100%;
+}
+
+.post .post-content {
+    width: 100%;
+
+}
+
+.post .post-content img {
+    width: 100%;
+}
+
+.post .post-react {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 8px;
+    gap: 16px;
+}
+
+.post .post-react i:nth-child(3) {
+    flex-grow: 4;
+}
+
+.post .post-react i:nth-child(4) {
+    transform: rotate(90deg);
+}
+
+.post .likes,
+.post .subs {
+    width: 100%;
+    padding: 4px 8px;
+}
+
+.post .likes p,
+.post .subs p {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.post .subs p.comments {
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 75%;
+    padding: 4px 0;
+}
