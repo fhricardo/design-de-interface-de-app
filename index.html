@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interface Web App">
     <title>Mobile App</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/d333ca2c00.js" crossorigin="anonymous"></script>
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
     <div class="app">
         <div class="topSO">
             <div class="left">
-                <h5>20:22</h5>
+                <h5 id="relogio"></h5>
                 <i class="fa-brands fa-facebook fa-xs"></i>
             </div>
             <div class="right">
@@ -74,12 +76,12 @@
                             <div class="username">Nome do Usuário</div>
                             <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
                         </div>
-                        <div class="post-content">
+                        <div class="post-content" ondblclick="like('1')">
                             <img src="https://picsum.photos/1080/1080?random=1" alt="">
                         </div>
                         <div class="post-bottom">
                             <div class="post-react">
-                                <i class="fa-regular fa-heart fa-xl"></i>
+                                <i class="fa-regular fa-heart fa-xl" id="1" onclick="like('1')"></i>
                                 <i class="fa-regular fa-comment fa-xl"></i>
                                 <i class="fa-regular fa-paper-plane fa-xl"></i>
                                 <i class="fa-regular fa-font-awesome fa-xl"></i>
@@ -90,7 +92,7 @@
                             <div class="subs">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque est labore ex
                                     laborum?...mais</p>
-                                <p class="comments">Ver todos os comentários</p>
+                                <p onclick="vercomentario()">Ver todos os comentários</p>
                             </div>
                             <div class="add-comment">
 
@@ -107,12 +109,12 @@
                             <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
                         </div>
 
-                        <div class="post-content">
+                        <div class="post-content" ondblclick="like('2')">
                             <img src="https://picsum.photos/1080/1350?random=2" alt="">
                         </div>
                         <div class="post-bottom">
                             <div class="post-react">
-                                <i class="fa-regular fa-heart fa-xl"></i>
+                                <i class="fa-regular fa-heart fa-xl" id="2" onclick="like('2')"></i>
                                 <i class="fa-regular fa-comment fa-xl"></i>
                                 <i class="fa-regular fa-paper-plane fa-xl"></i>
                                 <i class="fa-regular fa-font-awesome fa-xl"></i>
@@ -123,7 +125,7 @@
                             <div class="subs">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque est labore ex
                                     laborum?...mais</p>
-                                <p class="comments">Ver todos os comentários</p>
+                                <p onclick="vercomentario()">Ver todos os comentários</p>
                             </div>
                             <div class="add-comment">
 
@@ -140,12 +142,12 @@
                             <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
                         </div>
 
-                        <div class="post-content">
+                        <div class="post-content" ondblclick="like('3')">
                             <img src="https://picsum.photos/1080/1080?random=3" alt="">
                         </div>
                         <div class="post-bottom">
                             <div class="post-react">
-                                <i class="fa-regular fa-heart fa-xl"></i>
+                                <i class="fa-regular fa-heart fa-xl" id="3" onclick="like('3')"></i>
                                 <i class="fa-regular fa-comment fa-xl"></i>
                                 <i class="fa-regular fa-paper-plane fa-xl"></i>
                                 <i class="fa-regular fa-font-awesome fa-xl"></i>
@@ -156,7 +158,7 @@
                             <div class="subs">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque est labore ex
                                     laborum?...mais</p>
-                                <p class="comments">Ver todos os comentários</p>
+                                <p onclick="vercomentario()">Ver todos os comentários</p>
                             </div>
                             <div class="add-comment">
 
@@ -173,12 +175,12 @@
                             <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
                         </div>
 
-                        <div class="post-content">
+                        <div class="post-content" ondblclick="like('4')">
                             <img src="https://picsum.photos/1080/1350?random=4" alt="">
                         </div>
                         <div class="post-bottom">
                             <div class="post-react">
-                                <i class="fa-regular fa-heart fa-xl"></i>
+                                <i class="fa-regular fa-heart fa-xl" id="4" onclick="like('4')"></i>
                                 <i class="fa-regular fa-comment fa-xl"></i>
                                 <i class="fa-regular fa-paper-plane fa-xl"></i>
                                 <i class="fa-regular fa-font-awesome fa-xl"></i>
@@ -189,7 +191,7 @@
                             <div class="subs">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque est labore ex
                                     laborum?...mais</p>
-                                <p class="comments">Ver todos os comentários</p>
+                                <p onclick="vercomentario()">Ver todos os comentários</p>
                             </div>
                             <div class="add-comment">
 
@@ -206,12 +208,12 @@
                             <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
                         </div>
 
-                        <div class="post-content">
+                        <div class="post-content" ondblclick="like('5')">
                             <img src="https://picsum.photos/1080/1080?random=5" alt="">
                         </div>
                         <div class="post-bottom">
                             <div class="post-react">
-                                <i class="fa-regular fa-heart fa-xl"></i>
+                                <i class="fa-regular fa-heart fa-xl" id="5" onclick="like('5')"></i>
                                 <i class="fa-regular fa-comment fa-xl"></i>
                                 <i class="fa-regular fa-paper-plane fa-xl"></i>
                                 <i class="fa-regular fa-font-awesome fa-xl"></i>
@@ -222,7 +224,7 @@
                             <div class="subs">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque est labore ex
                                     laborum?...mais</p>
-                                <p class="comments">Ver todos os comentários</p>
+                                <p onclick="vercomentario()">Ver todos os comentários</p>
                             </div>
                             <div class="add-comment">
 
@@ -239,12 +241,12 @@
                             <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
                         </div>
 
-                        <div class="post-content">
+                        <div class="post-content" ondblclick="like('6')">
                             <img src="https://picsum.photos/1080/1350?random=6" alt="">
                         </div>
                         <div class="post-bottom">
                             <div class="post-react">
-                                <i class="fa-regular fa-heart fa-xl"></i>
+                                <i class="fa-regular fa-heart fa-xl" id="6" onclick="like('6')"></i>
                                 <i class="fa-regular fa-comment fa-xl"></i>
                                 <i class="fa-regular fa-paper-plane fa-xl"></i>
                                 <i class="fa-regular fa-font-awesome fa-xl"></i>
@@ -255,7 +257,7 @@
                             <div class="subs">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque est labore ex
                                     laborum?...mais</p>
-                                <p class="comments">Ver todos os comentários</p>
+                                <p onclick="vercomentario()">Ver todos os comentários</p>
                             </div>
                             <div class="add-comment">
 
@@ -272,12 +274,12 @@
                             <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
                         </div>
 
-                        <div class="post-content">
+                        <div class="post-content" ondblclick="like('7')">
                             <img src="https://picsum.photos/1080/1350?random=7" alt="">
                         </div>
                         <div class="post-bottom">
                             <div class="post-react">
-                                <i class="fa-regular fa-heart fa-xl"></i>
+                                <i class="fa-regular fa-heart fa-xl" id="7" onclick="like('7')"></i>
                                 <i class="fa-regular fa-comment fa-xl"></i>
                                 <i class="fa-regular fa-paper-plane fa-xl"></i>
                                 <i class="fa-regular fa-font-awesome fa-xl"></i>
@@ -288,7 +290,7 @@
                             <div class="subs">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque est labore ex
                                     laborum?...mais</p>
-                                <p class="comments">Ver todos os comentários</p>
+                                <p onclick="vercomentario()">Ver todos os comentários</p>
                             </div>
                             <div class="add-comment">
 
@@ -305,12 +307,12 @@
                             <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
                         </div>
 
-                        <div class="post-content">
+                        <div class="post-content" ondblclick="like('8')">
                             <img src="https://picsum.photos/1080/1080?random=8" alt="">
                         </div>
                         <div class="post-bottom">
                             <div class="post-react">
-                                <i class="fa-regular fa-heart fa-xl"></i>
+                                <i class="fa-regular fa-heart fa-xl" id="8" onclick="like('8')"></i>
                                 <i class="fa-regular fa-comment fa-xl"></i>
                                 <i class="fa-regular fa-paper-plane fa-xl"></i>
                                 <i class="fa-regular fa-font-awesome fa-xl"></i>
@@ -321,7 +323,7 @@
                             <div class="subs">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque est labore ex
                                     laborum?...mais</p>
-                                <p class="comments">Ver todos os comentários</p>
+                                <p onclick="vercomentario()">Ver todos os comentários</p>
                             </div>
                             <div class="add-comment">
 
@@ -330,6 +332,7 @@
 
                     </div>
                 </div>
+
             </main>
 
         </div>
@@ -349,7 +352,101 @@
                 <i class="fa-solid fa-chevron-left fa-lg"></i>
             </div>
         </footer>
+        <section id="comment" class="hide">
+            <div class="comment-top">
+                <div class="close" onclick="vercomentario()"></div>
+                <h4>Comentários</h4>
+            </div>
+            <div class="comments">
+                <div class="comment">
+                    <div class="profilePic">
+                        <img src="https://picsum.photos/48/48?random=12" alt="">
+                    </div>
+                    <div class="comment-text">
+                        <div class="userName">nome_de_usuário</div>
+                        <div class="theComment">Aqui está um comentário</div>
+                        <div class="response">Responder</div>
+                    </div>
+                    <div class="comment-like">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                </div>
+                <div class="comment">
+                    <div class="profilePic">
+                        <img src="https://picsum.photos/48/48?random=13" alt="">
+                    </div>
+                    <div class="comment-text">
+                        <div class="userName">nome_de_usuário</div>
+                        <div class="theComment">Aqui está um comentário</div>
+                        <div class="response">Responder</div>
+                    </div>
+                    <div class="comment-like">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                </div>
+                <div class="comment">
+                    <div class="profilePic">
+                        <img src="https://picsum.photos/48/48?random=14" alt="">
+                    </div>
+                    <div class="comment-text">
+                        <div class="userName">nome_de_usuário</div>
+                        <div class="theComment">Aqui está um comentário</div>
+                        <div class="response">Responder</div>
+                    </div>
+                    <div class="comment-like">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                </div>
+                <div class="comment">
+                    <div class="profilePic">
+                        <img src="https://picsum.photos/48/48?random=15" alt="">
+                    </div>
+                    <div class="comment-text">
+                        <div class="userName">nome_de_usuário</div>
+                        <div class="theComment">Aqui está um comentário</div>
+                        <div class="response">Responder</div>
+                    </div>
+                    <div class="comment-like">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                </div>
+                <div class="comment">
+                    <div class="profilePic">
+                        <img src="https://picsum.photos/48/48?random=16" alt="">
+                    </div>
+                    <div class="comment-text">
+                        <div class="userName">nome_de_usuário</div>
+                        <div class="theComment">Aqui está um comentário</div>
+                        <div class="response">Responder</div>
+                    </div>
+                    <div class="comment-like">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                </div>
+                <div class="comment">
+                    <div class="profilePic">
+                        <img src="https://picsum.photos/48/48?random=17" alt="">
+                    </div>
+                    <div class="comment-text">
+                        <div class="userName">nome_de_usuário</div>
+                        <div class="theComment">Aqui está um comentário</div>
+                        <div class="response">Responder</div>
+                    </div>
+                    <div class="comment-like">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
     </div>
+
 </body>
 
 </html>
