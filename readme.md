@@ -6,7 +6,7 @@ O projeto utiliza imagens placeholder do [Picsum Photos](https://picsum.photos/)
 
 ## Funcionalidades Disponíveis
 - Relógio no topo da interface
-- Rolagem dos itens de Stories
+- Rolagem dos itens de Stories (com clique do scroll do mouse)
 - Rolagem do Feed de Posts
 - Botão curtir (coração)
 - Curtir com duplo clique na foto

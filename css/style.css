@@ -158,6 +158,16 @@ main {
     justify-content: start;
     align-items: center;
     gap: 10px;
+    position: relative;
+}
+
+.stories-content>div p {
+    width: 88px;
+    height: 16px;
+    color: #fafafa;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 4px;
 }
 
 .story {
@@ -166,7 +176,6 @@ main {
     position: relative;
     border-radius: 50%;
     overflow: hidden;
-
 }
 
 .story::before {
@@ -195,6 +204,27 @@ main {
     overflow: hidden;
 }
 
+/* Adicionar Story */
+.stories-content>div:nth-child(1)::after {
+    font: var(--fa-font-solid);
+    content: "\f055";
+    position: absolute;
+    bottom: 15px;
+    left: 63px;
+    color: #fafafa;
+    font-size: 18px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #242424;
+    border-radius: 50%;
+    border: 2px solid #242424;
+
+}
+
+/* Estilização do Feed */
 .feed {
     width: 100%;
 }
@@ -239,7 +269,6 @@ main {
 .post .post-content {
     width: 100%;
     position: relative;
-
 }
 
 .liked {
